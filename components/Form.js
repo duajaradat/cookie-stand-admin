@@ -16,17 +16,17 @@ function Form(props) {
 
                         <div className='flex flex-col pr-4'>
                             <label className="pb-1 font-meduim">Minimum Customers per Hour</label>
-                            <input className="" name="min" />
+                            <input type="number" className="" name="min" />
                         </div>
 
                         <div className='flex flex-col pr-4 '>
                             <label className="pb-1 font-meduim">Maximum Customers per Hour</label>
-                            <input className="" name="max" />
+                            <input type="number" name="max" />
                         </div>
 
                         <div className='flex flex-col pr-4 '>
                             <label className="pb-1 font-meduim" >Average Cookie per Sale</label>
-                            <input className="" name="avg" />
+                            <input type="number" className="" name="avg" />
                         </div>
 
                         <button className="bg-green-500 text-black text-center hover:bg-greem-50 font-bold py-2 px-4 h-16">Create</button>

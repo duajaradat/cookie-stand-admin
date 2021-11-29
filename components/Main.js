@@ -19,8 +19,8 @@ function Main() {
         <main>
             <Form cookie={createCookieStand} />
             {cookiesData.length > 0 ? <div>
-                <p>Report Table coming Soon...</p>
-
+                <p className="text-center mt-1">Report Table coming Soon...</p>
+                <p className="text-center mt-2">{JSON.stringify(cookiesData)}</p>
             </div> : ""}
         </main>
     );
