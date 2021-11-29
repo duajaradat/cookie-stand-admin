@@ -29,7 +29,7 @@ function Form(props) {
                             <input type="number" className="" name="avg" />
                         </div>
 
-                        <button className="bg-green-500 text-black text-center hover:bg-greem-50 font-bold py-2 px-4 h-16">Create</button>
+                        <button className="bg-green-500 w-1/4 text-black text-center hover:bg-greem-50 font-bold mt-2 py-2 px-4 h-16">Create</button>
 
                     </div>
 
