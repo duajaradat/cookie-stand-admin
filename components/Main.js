@@ -1,4 +1,4 @@
-import Form from './Form';
+import CreateForm from './CreateForm';
 import { useState } from 'react';
 
 function Main() {
@@ -19,8 +19,8 @@ function Main() {
         <main>
             <Form cookie={createCookieStand} />
             {cookiesData.length > 0 ? <div>
-                <p className="text-center mt-1">Report Table coming Soon...</p>
-                <p className="text-center mt-2">{JSON.stringify(cookiesData)}</p>
+                <p className="mt-1 text-center">Report Table coming Soon...</p>
+                <p className="mt-2 text-center">{JSON.stringify(cookiesData)}</p>
             </div> : ""}
         </main>
     );

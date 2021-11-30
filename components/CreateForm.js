@@ -1,13 +1,13 @@
 import React from 'react'
 
-function Form(props) {
+function CreateForm(props) {
     return (
-        <form onSubmit={props.cookie} className="bg-green-300 mt-8 p-4 w-2/3 mx-auto items-center rounded-md">
-            <h2 className="font-bold text-xl text-center pb-4">Create Cookie Stand</h2>
+        <form onSubmit={props.cookie} className="items-center w-2/3 p-4 mx-auto mt-8 bg-green-300 rounded-md">
+            <h2 className="pb-4 text-xl font-bold text-center">Create Cookie Stand</h2>
             <div className="pl-2">
                 <div className='flex'>
-                    <label className="pb-1 font-medium mr-2">Location</label>
-                    <input type="text" className="w-full flex-auto m-1" name="location" />
+                    <label className="pb-1 mr-2 font-medium">Location</label>
+                    <input type="text" className="flex-auto w-full m-1" name="location" />
                 </div>
 
                 <div className='flex'>
@@ -29,7 +29,7 @@ function Form(props) {
                             <input type="number" className="" name="avg" />
                         </div>
 
-                        <button className="bg-green-500 w-1/4 text-black text-center hover:bg-greem-50 font-bold mt-2 py-2 px-4 h-16">Create</button>
+                        <button className="w-1/4 h-16 px-4 py-2 mt-2 font-bold text-center text-black bg-green-500 hover:bg-greem-50">Create</button>
 
                     </div>
 
@@ -38,4 +38,4 @@ function Form(props) {
         </form >
     );
 }
-export default Form;
+export default CreateForm;
