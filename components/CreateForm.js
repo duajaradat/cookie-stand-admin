@@ -10,22 +10,22 @@ function CreateForm({ createCookieStand }) {
                     <input type="text" className="flex-auto w-full m-1" name="location" />
                 </div>
 
-                <div className='flex'>
+                <div className='flex mt-4'>
 
                     <div className='flex w-full space-x-8'>
 
-                        <div className='flex flex-col pr-4'>
-                            <label className="pb-1 font-mediam">Minimum Customers per Hour</label>
+                        <div className='flex flex-col pl-2 pr-2 bg-green-200'>
+                            <label className="pt-1 pb-1 text-sm">Minimum Customers per Hour</label>
                             <input type="number" className="" name="min" />
                         </div>
 
-                        <div className='flex flex-col pr-4 '>
-                            <label className="pb-1 font-meduim">Maximum Customers per Hour</label>
+                        <div className='flex flex-col pl-2 pr-2 bg-green-200'>
+                            <label className="pt-1 pb-1 text-sm ">Maximum Customers per Hour</label>
                             <input type="number" name="max" />
                         </div>
 
-                        <div className='flex flex-col pr-4 '>
-                            <label className="pb-1 font-meduim" >Average Cookie per Sale</label>
+                        <div className='flex flex-col pl-2 pr-2 bg-green-200'>
+                            <label className="pt-1 pb-1 text-sm" >Average Cookie per Sale</label>
                             <input type="number" className="" name="avg" />
                         </div>
 

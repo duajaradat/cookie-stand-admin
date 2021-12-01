@@ -7,7 +7,7 @@ function Main({ sales, createCookieStand }) {
     return (
         <main className="flex flex-col items-center ">
             <CreateForm createCookieStand={createCookieStand} />
-            {sales > 0 ? <ReportTable sales={sales} /> : <p className="pt-8 text-xl font-bold text-center">No Cookies Stands Available</p>}
+            {sales.length > 0 ? <ReportTable sales={sales} /> : <p className="pt-8 text-xl font-bold text-center">No Cookies Stands Available</p>}
 
         </main>
     );
