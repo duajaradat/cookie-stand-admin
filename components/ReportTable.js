@@ -1,11 +1,29 @@
 import React from 'react'
-import hours from '../data'
-import hourly_sales from '../data'
 
-export default function ReportTable() {
+import { hours } from '../data.js'
+
+
+export default function ReportTable({ sales }) {
+
     return (
-        <div>
+        <>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        {hours.map(hour => <th>{hour}</th>)}
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-        </div>
+
+                </tbody>
+                <tfoot>
+                    <tr>Totals</tr>
+                </tfoot>
+            </table>
+
+        </>
     )
 }

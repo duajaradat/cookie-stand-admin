@@ -1,8 +1,8 @@
 
-function Footer() {
+function Footer({ standCounter }) {
     return (
-        <div className="flex justify-between mt-8 p-4 text-black-100 bg-green-500">
-            <p className="text-l">&copy; 2021</p>
+        <div className="flex justify-between p-4 mt-8 bg-green-500 text-black-100">
+            <p className="text-l">{`${standCounter} Locations World Wide`}</p>
         </div>
     )
 }

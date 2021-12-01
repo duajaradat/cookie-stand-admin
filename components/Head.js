@@ -3,7 +3,7 @@ import React from 'react'
 export default function Head() {
     return (
         <div>
-            <title>Cookie Stand Admin</title>
+            <title>Cookie Stand</title>
         </div>
     )
 }
