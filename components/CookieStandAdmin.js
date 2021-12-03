@@ -5,25 +5,29 @@ import Header from './Header'
 import Main from './Main'
 import Footer from './Footer'
 import { hours } from '../data'
+import useResource from '../hooks/useResource'
 
-function CookieStandAdmin() {
-    const [sales, setSales] = useState([]);
+function CookieStandAdmin({ user, logout }) {
+
+    const [sales, setSales] = useState(null);
+    const { resources, loading, createResource } = useResource();
 
     function createCookieStand(e) {
         e.preventDefault();
 
+        setSales(resources)
         const data = {
-            id: sales.length,
+            id: resources.length,
             location: e.target.location.value,
             min: e.target.min.value,
             max: e.target.max.value,
             avg: e.target.avg.value,
-            hourly_sales: calculateCookie(e.target.min.value, e.target.max.value, e.target.avg.value)
-
+            hourly_sales: calculateCookie(e.target.min.value, e.target.max.value, e.target.avg.value),
+            user: user.id
         }
 
 
-        setSales(sales => [...sales, data])
+        createResource(data)
     }
 
     function calculateCookie(min, max, avg) {
@@ -41,9 +45,9 @@ function CookieStandAdmin() {
         <>
             <Head />
             <body>
-                <Header />
-                <Main sales={sales} sales={sales} createCookieStand={createCookieStand} />
-                <Footer standCounter={sales.length} />
+                <Header logout={logout} user={user} />
+                <Main loading={loading} setSales={setSales} sales={sales} createCookieStand={createCookieStand} />
+                {loading ? <Footer standCounter={0} /> : <Footer standCounter={resources.length} />}
             </body>
 
         </>
