@@ -4,14 +4,27 @@
 
 Du'a Jaradat
 
+## Colleagues : 
+
+Mohammad Silwadi
+Faisal Kushha
+Abdallah Nazzal
+
 ---
 
 ## Links and Resources
 
 - [Pull Request lab 37](https://github.com/duajaradat/cookie-stand-admin/pull/1)
 - [Pull Request lab 38](https://github.com/duajaradat/cookie-stand-admin/pull/2)
+- [Pull Request lab 39](https://github.com/duajaradat/cookie-stand-admin/pull/3)
+
 ---
 
+## Deployment App
+
+[Cookie Stand]()
+
+---
 ## Overview
 
 One great “stack” is to use Next.js (which builds on top of React) and style with Tailwind.
