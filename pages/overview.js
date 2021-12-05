@@ -14,7 +14,7 @@ export default function overview() {
     return (
         <>
             <Head />
-            <Header user={user} logout={logout} />
+            <Header user={user || "ananumous"} logout={logout} />
             <main className='flex flex-col items-center mt-8'>
                 < Link href='/'>
                     <button className='px-4 py-2 font-bold text-black bg-green-500 rounded hover:bg-green-300'>Home</button>
